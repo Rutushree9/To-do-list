@@ -1,0 +1,116 @@
+body{
+	font-size:16px;
+	font-family:"Arial", serif;
+	
+}
+#divid{
+	width:600px;
+	margin:10% auto;
+	border:#ccc 2px solid;
+	background:white;
+	
+}
+#calender{
+		width:600px;
+		height :50px;
+		background-color:white;
+		color:#fff;
+		border-radius:5%;
+		box-shadow:0 4px 4px 0 rgba(50,50,50,0.4);
+}
+#calender>p{
+	font-family:Verdana,Arial,sans-serif;
+	text-align:center;
+	color:blue;
+	margin:0;
+	padding:10px;
+
+}
+#calender-day{
+	font-size:16px;
+	position:absolute;
+	left:63%;
+	padding: 3px;
+	
+	
+}
+#calender-month-year{
+	font-size:14px;
+	position:absolute;
+	right:60%;
+	padding: -5px;
+	
+}
+#calender-date{
+	font-size:35px;
+	position:absolute;
+	right:64%;
+	padding:1px;
+	
+	}
+
+
+
+.title{
+		padding:5px;
+		background:steelblue;
+		text-align:center;
+}
+button{
+	  background-color: skyblue;
+    border:none;
+    color: white;
+    text-align: center;
+    position:relative;
+	left:45%;
+    margin: 2px;
+    cursor: pointer;
+	border-radius: 70%;
+	font-size:15px;
+	padding:30px;
+	display:inline-block;
+	
+	
+}
+input{
+	width:100%;
+	box-sizing:border-box;
+	padding:15px;
+	color:steelblue;
+	font-size:18px;
+	text-align:center;
+	display:none;
+}
+ul{
+		padding:15px;
+}
+ul li{
+		display:block;
+	padding:15px;
+	font-size:22px;
+	/* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: black;
+ // text-decoration: line-through;
+}
+
+ul li.checked::after{
+content: '';
+  position: absolute;
+  left:70%;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
